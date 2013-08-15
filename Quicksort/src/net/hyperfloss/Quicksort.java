@@ -33,11 +33,11 @@ public class Quicksort {
 			return firstIndex;
 		}
 		else if( (lst.get(secondIndex).compareTo(lst.get(firstIndex)) <= 0) && (lst.get(secondIndex).compareTo(lst.get(thirdIndex)) >= 0) )
-		{//The object at firstIndex is a median of the three because it's less than or equal to the object at firstIndex and greater than or equal to the object at thirdIndex. Since it counts as a median, return it.
+		{//The object at secondIndex is a median of the three because it's less than or equal to the object at firstIndex and greater than or equal to the object at thirdIndex. Since it counts as a median, return it.
 			return secondIndex;
 		}
 		else if( (lst.get(secondIndex).compareTo(lst.get(firstIndex)) >= 0) && (lst.get(secondIndex).compareTo(lst.get(thirdIndex)) <= 0) )
-		{//The object at firstIndex is a median of the three because it's greater than or equal to the object at firstIndex and less than or equal to the object at thirdIndex. Since it counts as a median, return it.
+		{//The object at secondIndex is a median of the three because it's greater than or equal to the object at firstIndex and less than or equal to the object at thirdIndex. Since it counts as a median, return it.
 			return secondIndex;
 		}
 		else
