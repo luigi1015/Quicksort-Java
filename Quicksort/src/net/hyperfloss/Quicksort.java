@@ -66,6 +66,7 @@ public class Quicksort {
 	 * partition does an in-place sorting into 2 partitions; items less than the partition and items equal to or greater than the partition.
 	 * 
 	 * @author Jeff Crone
+	 * 
 	 * @param lst The list of items to partition.
 	 * @param leftIndex The index on the left edge of the items to partition.
 	 * @param rightIndex The index on the right edge of the items to partition.
@@ -78,7 +79,6 @@ public class Quicksort {
 		T pivVal = lst.get(pivotIndex);
 		Quicksort.swap(lst, pivotIndex, rightIndex );
 		
-		//Swap the elements around
 		for( int i = leftIndex; i < rightIndex; i++ )
 		{
 			//if( lst.get(i) < pivVal )
@@ -100,6 +100,7 @@ public class Quicksort {
 	 * It gets the pivot point and uses that to partition the items. It then does a recursive call to sort the partitions.
 	 * 
 	 * @author Jeff Crone
+	 * 
 	 * @param items The list of items to sort.
 	 * @param left The index of the leftmost item to sort.
 	 * @param right The index of the rightmost item to sort.
