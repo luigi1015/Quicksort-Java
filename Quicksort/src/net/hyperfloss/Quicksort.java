@@ -81,7 +81,6 @@ public class Quicksort {
 		
 		for( int i = leftIndex; i < rightIndex; i++ )
 		{
-			//if( lst.get(i) < pivVal )
 			if( lst.get(i).compareTo(pivVal) < 0 )
 			{//If the element at index i is less than the pivot value, it should be before the pivot, so switch it.
 				Quicksort.swap( lst, i, newIndex );
