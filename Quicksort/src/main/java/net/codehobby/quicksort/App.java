@@ -1,7 +1,6 @@
 package net.codehobby.quicksort;
 
 /**
- * Hello world!
  *
  */
 public class App 
