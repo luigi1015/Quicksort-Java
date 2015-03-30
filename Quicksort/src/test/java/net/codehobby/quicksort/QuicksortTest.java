@@ -7,14 +7,14 @@ import junit.framework.TestSuite;
 /**
  * Unit test for the Quicksort App.
  */
-public class AppTest extends TestCase
+public class QuicksortTest extends TestCase
 {
     /**
      * Create the test case
      *
      * @param testName Name of the test case
      */
-    public AppTest( String testName )
+    public QuicksortTest( String testName )
     {
         super( testName );
     }
