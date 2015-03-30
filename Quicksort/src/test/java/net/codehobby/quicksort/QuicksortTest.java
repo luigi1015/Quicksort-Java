@@ -24,7 +24,7 @@ public class QuicksortTest extends TestCase
      */
     public static Test suite()
     {
-        return new TestSuite( AppTest.class );
+        return new TestSuite( QuicksortTest.class );
     }
 
     /**
@@ -33,5 +33,12 @@ public class QuicksortTest extends TestCase
     public void testApp()
     {
         assertTrue( true );
+    }
+
+    /**
+     * Basic test of Quicksort's sorting.
+     */
+    public void testSort()
+    {
     }
 }
