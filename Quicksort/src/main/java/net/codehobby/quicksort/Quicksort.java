@@ -116,4 +116,16 @@ public class Quicksort {
 		}
 	}
 
+	/**
+	 * The main quicksort method without the left and right parameters. It just has the list parameter to provide an easier method to use for other code. 
+	 * 
+	 * @author Jeff Crone
+	 * 
+	 * @param items The list of items to sort.
+	 */
+	public static <T extends Comparable<T>> void quicksort( List<T> items )
+	{
+		//Just call the other quicksort method with programatically generated left and right parameters.
+		return quicksort( items, 0, items,size()-1 );
+	}
 }
