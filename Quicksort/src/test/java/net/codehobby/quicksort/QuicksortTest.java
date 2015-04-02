@@ -4,6 +4,8 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
+import java.util.ArrayList;
+
 /**
  * Unit test for the Quicksort App.
  */
@@ -40,6 +42,15 @@ public class QuicksortTest extends TestCase
      */
     public void testSort()
     {
-	
+		ArrayList<Integer> elementsToSort = new ArrayList<Integer>();
+		elementsToSort.add(3);
+		elementsToSort.add(1);
+		elementsToSort.add(4);
+
+		Quicksort.quicksort( elementsToSort );
+
+		assertTrue( elementsToSort.get(0).equals(Integer.valueOf(1)) );
+		assertTrue( elementsToSort.get(1).equals(Integer.valueOf(3)) );
+		assertTrue( elementsToSort.get(2).equals(Integer.valueOf(4)) );
     }
 }
