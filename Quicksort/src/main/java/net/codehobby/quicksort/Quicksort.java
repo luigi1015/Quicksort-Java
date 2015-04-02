@@ -126,6 +126,6 @@ public class Quicksort {
 	public static <T extends Comparable<T>> void quicksort( List<T> items )
 	{
 		//Just call the other quicksort method with programatically generated left and right parameters.
-		return quicksort( items, 0, items,size()-1 );
+		quicksort( items, 0, items.size()-1 );
 	}
 }
