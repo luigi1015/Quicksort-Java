@@ -46,11 +46,13 @@ public class QuicksortTest extends TestCase
 		elementsToSort.add(3);
 		elementsToSort.add(1);
 		elementsToSort.add(4);
+		elementsToSort.add(1);
 
 		Quicksort.quicksort( elementsToSort );
 
 		assertTrue( elementsToSort.get(0).equals(Integer.valueOf(1)) );
-		assertTrue( elementsToSort.get(1).equals(Integer.valueOf(3)) );
-		assertTrue( elementsToSort.get(2).equals(Integer.valueOf(4)) );
+		assertTrue( elementsToSort.get(1).equals(Integer.valueOf(1)) );
+		assertTrue( elementsToSort.get(2).equals(Integer.valueOf(3)) );
+		assertTrue( elementsToSort.get(3).equals(Integer.valueOf(4)) );
     }
 }
