@@ -30,14 +30,6 @@ public class QuicksortTest extends TestCase
     }
 
     /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
-
-    /**
      * Basic test of Quicksort's sorting.
      */
     public void testSort()
