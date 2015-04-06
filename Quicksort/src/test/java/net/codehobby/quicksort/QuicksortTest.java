@@ -30,9 +30,9 @@ public class QuicksortTest extends TestCase
     }
 
     /**
-     * Basic test of Quicksort's sorting.
+     * Basic test of Quicksort's sorting using Integers.
      */
-    public void testSort()
+    public void testSortBasicInteger()
     {
 		ArrayList<Integer> elementsToSort = new ArrayList<Integer>();
 		elementsToSort.add(3);
@@ -46,5 +46,24 @@ public class QuicksortTest extends TestCase
 		assertTrue( elementsToSort.get(1).equals(Integer.valueOf(1)) );
 		assertTrue( elementsToSort.get(2).equals(Integer.valueOf(3)) );
 		assertTrue( elementsToSort.get(3).equals(Integer.valueOf(4)) );
+    }
+
+    /**
+     * Basic test of Quicksort's sorting using Strings.
+     */
+    public void testSortBasicString()
+    {
+		ArrayList<String> elementsToSort = new ArrayList<String>();
+		elementsToSort.add("Alpha");
+		elementsToSort.add("Golf");
+		elementsToSort.add("Charlie");
+		elementsToSort.add("Delta");
+
+		Quicksort.quicksort( elementsToSort );
+
+		assertTrue( elementsToSort.get(0).equals("Alpha") );
+		assertTrue( elementsToSort.get(1).equals("Charlie") );
+		assertTrue( elementsToSort.get(2).equals("Delta") );
+		assertTrue( elementsToSort.get(3).equals("Golf") );
     }
 }
