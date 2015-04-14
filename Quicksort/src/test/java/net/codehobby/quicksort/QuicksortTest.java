@@ -48,6 +48,29 @@ public class QuicksortTest extends TestCase
 		assertTrue( elementsToSort.get(3).equals(Integer.valueOf(4)) );
     }
 
+	/**
+	 * Basic test of Quicksort's sorting using Integers.
+	 * Uses an automatic comparison to check rather than manually specifying the values.
+	 */
+	public void testSortIntegerAutomatic()
+	{
+		ArrayList<Integer> elementsToSort = new ArrayList<Integer>();
+		elementsToSort.add(3);
+		elementsToSort.add(1);
+		elementsToSort.add(4);
+		elementsToSort.add(1);
+
+		Quicksort.quicksort( elementsToSort );
+
+		if( elementsToSort.size() >= 2 )
+		{//If there are enough numbers to compare(at least 2), compare each number to the previous one to make sure each number is more than the previous one.
+			for( int i = 1; i < elementsToSort.size(); i++ )
+			{
+				assertTrue( elementsToSort.get(i).compareTo(elementsToSort.get(i-1)) >= 0 );
+			}
+		}
+	}
+
     /**
      * Basic test of Quicksort's sorting using Integers. This time it uses the quicksort method with the left and right parameters.
      */
